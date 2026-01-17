@@ -1,0 +1,69 @@
+// vim: fdm=marker
+// #D4D6B9
+
+configuration {
+  modes: "[window,drun,run,ssh]";
+  font: "FiraCode 24";
+  combi-hide-mode-prefix: true;
+}
+
+// making background transparent
+window {
+  transparency: "real";
+  background-color: rgba(3,25,38,0.6);
+  fullscreen: true;
+  padding: 25%;
+}
+
+mainbox {
+  background-color: transparent;
+}
+
+inputbar {
+  padding: 8px;
+  spacing: 18px;
+  background-color: transparent;
+  border-radius: 10px;
+  children: [prompt, entry];
+}
+
+listview {
+  background-color: transparent;
+  spacing: 20px;
+}
+
+// ----
+
+prompt {
+  background-color: transparent;
+  text-color: #DEE2E6;
+}
+
+entry {
+  text-color: #DEE2E6;
+  cursor-width: 18px;
+  hide-cursor-on-empty: true;
+  background-color: transparent;
+  blink: true;
+}
+
+
+element {
+  background-color: transparent;
+  children: [element-text];
+}
+
+element-text {
+  background-color: transparent;
+  text-color: #DEE2E6;
+}
+
+element selected {
+  background-color: #DEE2E6 ;
+}
+//#D4D6B9
+
+element-text selected {
+  background-color: transparent;
+  text-color: #212529;
+}
