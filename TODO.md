@@ -11,3 +11,4 @@
 - [ ] make button to show networking, bluetooth and on/off buttons 
 - [ ] change time zone of clock on click (UTC, BR, FR)
 - [ ] add current date to bar (?) 
+- [ ] make audio muted symbol adapt when source changes
