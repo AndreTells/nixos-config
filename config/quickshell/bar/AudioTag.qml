@@ -10,7 +10,7 @@ Rectangle{
 		objects: [ Pipewire.defaultAudioSink ]
 	}
 
-  implicitWidth: 100 
+  implicitWidth: 400 
   implicitHeight: parent.height * 0.9
   radius: parent.height * 0.8 /2
   color: element_surfaceColor 
@@ -21,7 +21,7 @@ Rectangle{
       const enabled_audio_text = `  ${Math.floor(Pipewire.defaultAudioSink.audio.volume * 100)} %`;
       const muted_audio_text = `󰝟  ${Math.floor(Pipewire.defaultAudioSink.audio.volume * 100)} %`;
       const is_muted = Pipewire.defaultAudioSink.audio.muted;
-      return is_muted ? enabled_audio_text: muted_audio_text;
+      return is_muted ? muted_audio_text : enabled_audio_text;
     }
     color: element_textOnSurfaceColor
     font.pixelSize: 16
