@@ -10,7 +10,7 @@ Rectangle{
 		objects: [ Pipewire.defaultAudioSink ]
 	}
 
-  implicitWidth: 400 
+  implicitWidth: 100 
   implicitHeight: parent.height * 0.9
   radius: parent.height * 0.8 /2
   color: element_surfaceColor 
