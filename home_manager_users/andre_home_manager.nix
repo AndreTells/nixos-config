@@ -29,6 +29,7 @@
       ripgrep # basically grep but better
       tectonic # compiler for tex documents
       fd # replacement for find command 
+      cmus # command line audio player
     ];
 
     programs.zoxide = {
