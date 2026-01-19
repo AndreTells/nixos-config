@@ -3,11 +3,13 @@
 {
   home.packages = with pkgs; [
     #lsp servers
-    texlab
-    lua-language-server
-    pyright
-    nil
-    marksman
+    texlab # latex lsp
+    lua-language-server # lua lsp 
+    pyright # python lsp
+    nil # nix lsp
+    marksman #markdown lsp
+    clang-tools #contains clangd, a c/c++ lsp 
+    sqruff # sql code linter and  lsp
     
     luarocks
     fzf

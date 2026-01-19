@@ -28,12 +28,14 @@ cmp.setup({
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 -- Language servers to install (you'll need to add these to systemPackages)
-local servers = { 'pyright', 'nil_ls', 'clangd' }
+local servers = { 'pyright', 'nil_ls', 'clangd'}
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
     capabilities = capabilities,
   }
 end
+
+vim.lsp.enable('sqruff')
 
 -- Keybindings
         vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Hover documentation' })
