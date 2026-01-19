@@ -7,7 +7,6 @@
     fwupd.enable = true; # firmware updater
 
     # sound services
-    pulseaudio.enable = false;
     pipewire = {
       enable = true;
       alsa.enable = true;
