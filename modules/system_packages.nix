@@ -42,4 +42,6 @@
     wlr.enable = true;
     config.common.default = "*";
   };
+
+  programs.command-not-found.enable =  true;
 }
