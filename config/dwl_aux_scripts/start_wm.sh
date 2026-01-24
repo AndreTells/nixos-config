@@ -5,6 +5,8 @@ export XDG_CURRENT_DESKTOP=wlroots # sets the desktop environment to be used by
                                    # based on
                                    
 export MOZ_ENABLE_WAYLAND=1 # forces firefox to use wayland
+export MOZ_DISABLE_RDD_SANDBOX=1 # allows firefox to use nvidia specific
+                                 # hardware acceleration 
 
 export QT_QPA_PLATFORM=wayland # forces qt applications to use the wayland backend
 
