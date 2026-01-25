@@ -65,7 +65,10 @@ Scope {
 
 					IconImage {
 						implicitSize: 30
-						source: "file:/etc/assets/audio.png"
+            source: { 
+              const is_muted = Pipewire.defaultAudioSink.audio.muted;
+              return is_muted ? "file:/etc/assets/audio-off.png" : "file:/etc/assets/audio.png"
+            }
 					}
 
 					Rectangle {

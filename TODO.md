@@ -4,11 +4,11 @@
 - [ ] look into runit
 - [ ] package slimbook apps for nixos 
 - [x] make space between windows  
-- [ ] make audio slider recognize when sound is muted
+- [x] make audio slider recognize when sound is muted
 - [x] make rofi get a subset of all available apps 
 - [ ] make notification bar to show which app sent the notification
 - [ ] make notification side pannel overlay
 - [ ] make button to show networking, bluetooth and on/off buttons 
 - [ ] change time zone of clock on click (UTC, BR, FR)
 - [ ] add current date to bar (?) 
-- [ ] make audio muted symbol adapt when source changes
+- [x] make audio muted symbol adapt when source changes
