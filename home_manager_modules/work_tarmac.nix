@@ -7,6 +7,7 @@
     slack
     usql
     jq
+    codex
   ];
 
   home.shellAliases = {
