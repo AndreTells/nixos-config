@@ -28,6 +28,7 @@
       noice-nvim
       nvim-lspconfig
       nvim-cmp
+      nvim-ufo
       cmp-nvim-lsp
       kanagawa-nvim
       telescope-nvim

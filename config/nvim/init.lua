@@ -14,3 +14,4 @@ require('config.telescope')
 require('config.treesitter')
 require('config.vimwiki')
 require('config.noice')
+require('config.ufo') -- foldings
