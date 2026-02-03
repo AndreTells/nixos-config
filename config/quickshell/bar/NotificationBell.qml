@@ -13,20 +13,31 @@ Rectangle{
 
   Connections {
       target: NotificationServer{
-          onNotification:(n)=>{
+          onNotification:(new_notif)=>{
               receivedNotification = true;
               //handle notification
 
-              //console.log('\n\nnew notification received \n\n')
-              //const allNotifs = [...activeNotifications];
-              //for (const notif of allNotifs) {
-              //    console.log(notif)
-              //    console.log(notif.summary)
-              //    console.log(notif.body)
-              //}
+              new_notif.closed.connect(function(reason) {
+                      // use 'fyi' command utility to test this out
+                      activeNotifications = activeNotifications.filter(notif=> notif != new_notif);
+                      new_notif.dismiss;
 
-              n.tracked = true;
-              activeNotifications.push(n);
+                      if(activeNotifications.length == 0){
+                        receivedNotification = false;
+                      }
+                      destroy();
+                  });
+
+              const allNotifs = [...activeNotifications];
+              for (const notif of allNotifs) {
+                  console.log(notif)
+                  console.log(notif.id)
+                  console.log(notif.summary)
+                  console.log(notif.body)
+              }
+
+              new_notif.tracked = true;
+              activeNotifications.push(new_notif);
           }
       }
   }
